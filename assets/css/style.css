@@ -1,0 +1,107 @@
+/*organize*/
+
+.gcont {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 200px auto auto auto;
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas: "intro intro intro intro" "left-bar shop shop shop" "footer footer footer footer";
+}
+
+
+/*header*/
+
+.intro {
+    grid-area: intro;
+    background-color: #c89e13;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/*left-bar*/
+
+.left-bar {
+    display: flex;
+    grid-area: left-bar;
+    background-color: #c89e1393;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 13px;
+}
+
+.left {
+    display: flex;
+}
+
+.left-bar h1 {
+    text-align: center;
+}
+
+.category h3 {
+    padding: 5px;
+}
+
+.cantidad h3 {
+    color: gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+
+/*shop*/
+
+.shop {
+    grid-area: shop;
+    display: grid;
+    background-color: rgba(128, 128, 128, 0.518);
+    text-align: center;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    padding: 10px;
+}
+
+h4 {
+    margin: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.specification {
+    background-color: white;
+}
+
+.buy {
+    background-color: white;
+}
+
+.buy h5 {
+    font-weight: lighter;
+    color: dimgrey;
+}
+
+.card button {
+    background-color: #1d7185;
+    padding: 8px;
+    color: white;
+    border: none;
+}
+
+
+/*footer*/
+
+footer {
+    grid-area: footer;
+    background-color: #c89e13;
+    text-align: center;
+    justify-content: center;
+}
+
+footer h5 {
+    font-weight: lighter;
+    font-size: 20px;
+}
